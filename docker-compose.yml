@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+
+  postgres:
+    image: postgres
+    restart: always
+    container_name: postgres1
+    environment:
+      POSTGRES_PASSWORD: pwd
+    ports:
+      - 15432:5432
